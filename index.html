@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Auto Lavado Multiservicios VH — Detallado, encerado y lavado profesional para tu vehículo. Llámanos al 7168-6242.">
+  <title>Auto Lavado Multiservicios VH</title>
+
+  <!-- Preconnect Google Fonts -->
+  <!-- W3C info #4-5: trailing slash en void elements removido -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- W3C warning #7: role="banner" innecesario en <header> nativo — removido -->
+  <header>
+    <nav class="navbar" aria-label="Navegación principal">
+      <div class="nav-inner">
+
+        <a href="#inicio" class="nav-logo" aria-label="Ir al inicio — Multiservicios VH">
+          <!-- W3C info #8: trailing slash en <img /> removido -->
+          <img src="img/logo.jpg" alt="Logo de Auto Lavado Multiservicios VH" class="nav-logo-img">
+          <span class="nav-logo-text">Multi<span>Servicios VH</span></span>
+        </a>
+
+        <!-- W3C warning #9: role="list" innecesario en <ul> nativo — removido -->
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#paquetes">Paquetes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <div class="font-size-control" role="group" aria-label="Ajustar tamaño de letra">
+            <button type="button" class="btn-font-size" data-size="A" aria-label="Tamaño de letra normal"
+              aria-pressed="true">A</button>
+            <button type="button" class="btn-font-size" data-size="AA" aria-label="Tamaño de letra grande"
+              aria-pressed="false">AA</button>
+            <button type="button" class="btn-font-size" data-size="AAA" aria-label="Tamaño de letra extra grande"
+              aria-pressed="false">AAA</button>
+          </div>
+
+          <button id="theme-toggle" class="btn-theme" aria-label="Cambiar a modo claro" aria-pressed="false">☀️</button>
+
+          <a href="https://wa.me/50671686242" class="btn-nav-cta" target="_blank" rel="noopener noreferrer"
+            aria-label="Agendar cita por WhatsApp">
+            <svg class="icon-whatsapp" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
+              focusable="false">
+              <path
+                d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1-.2.2-.3.2-.6.1-1.9-.9-3.1-1.7-4.4-3.8-.2-.3 0-.5.1-.6l.5-.6c.1-.2.1-.4 0-.5-.1-.2-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9 1-.9 2.3 0 1.4 1 2.7 1.1 2.9.1.2 1.9 3 4.7 4.1 2.3.9 2.8.7 3.3.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.1-1.4-.1-.1-.3-.1-.5-.2z" />
+              <path
+                d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5.1-1.3c1.4.8 3 1.2 4.9 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.3.9.9-3.2-.2-.3C3.9 14.8 3.5 13.4 3.5 12c0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5-3.8 8.5-8.5 8.5z" />
+            </svg>
+            Cita
+          </a>
+
+          <button id="hamburger" class="hamburger" aria-label="Abrir menú" aria-expanded="false"
+            aria-controls="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <nav id="mobile-menu" class="mobile-menu" aria-label="Menú móvil">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#paquetes">Paquetes</a>
+        <a href="#contacto">Contacto</a>
+        <div class="font-size-control font-size-control--mobile" role="group" aria-label="Ajustar tamaño de letra">
+          <button type="button" class="btn-font-size" data-size="A" aria-label="Tamaño de letra normal"
+            aria-pressed="true">A</button>
+          <button type="button" class="btn-font-size" data-size="AA" aria-label="Tamaño de letra grande"
+            aria-pressed="false">AA</button>
+          <button type="button" class="btn-font-size" data-size="AAA" aria-label="Tamaño de letra extra grande"
+            aria-pressed="false">AAA</button>
+        </div>
+      </nav>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ========================
+         HERO — fondo: foto real del local con overlay azul
+         ======================== -->
+    <section id="inicio" aria-labelledby="hero-heading">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-bg-photo"></div>
+        <div class="hero-bg-overlay"></div>
+      </div>
+
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="hero-badge">Multiservicios VH</p>
+
+          <h1 class="hero-title" id="hero-heading">
+            Tu auto,<br>
+            <em>nuestro</em>
+            <span class="outline">detalle</span>
+          </h1>
+
+          <!-- W3C info #11: trailing slash en <br /> removido -->
+          <p class="hero-tagline">
+            <strong>Resultados que se notan.</strong><br>
+            Lavado profesional, detallado y más para tu vehículo.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="https://wa.me/50671686242" class="btn-primary" target="_blank" rel="noopener noreferrer"
+              aria-label="Agendar cita por WhatsApp al 7168-6242">
+              <svg class="icon-whatsapp" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
+                aria-hidden="true" focusable="false">
+                <path
+                  d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1-.2.2-.3.2-.6.1-1.9-.9-3.1-1.7-4.4-3.8-.2-.3 0-.5.1-.6l.5-.6c.1-.2.1-.4 0-.5-.1-.2-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9 1-.9 2.3 0 1.4 1 2.7 1.1 2.9.1.2 1.9 3 4.7 4.1 2.3.9 2.8.7 3.3.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.1-1.4-.1-.1-.3-.1-.5-.2z" />
+                <path
+                  d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5.1-1.3c1.4.8 3 1.2 4.9 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.3.9.9-3.2-.2-.3C3.9 14.8 3.5 13.4 3.5 12c0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5-3.8 8.5-8.5 8.5z" />
+              </svg>
+              Agendar cita
+            </a>
+            <a href="#servicios" class="btn-secondary" aria-label="Ver todos los servicios">
+              Ver servicios →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================
+         SERVICIOS
+         ======================== -->
+    <section id="servicios" aria-labelledby="services-heading">
+      <div class="section-inner">
+
+        <header class="section-header">
+          <p class="section-label">Lo que hacemos</p>
+          <h2 class="section-title" id="services-heading">
+            Nuestros <span>Servicios</span>
+          </h2>
+          <p class="section-desc">
+            Cada servicio está diseñado para devolver a tu vehículo el brillo y la limpieza que merece.
+          </p>
+        </header>
+
+        <!-- W3C errors #13-18: role="listitem" inválido en <article> — removido.
+             <article> es semánticamente autónomo y no requiere roles adicionales. -->
+        <div class="services-grid">
+
+          <article class="service-card">
+            <div class="service-media service-media--double">
+              <img src="img/detallado-interior.jpg"
+                alt="Detallado interior de vehículo — limpieza de tapicería y tablero" loading="lazy">
+              <img src="img/detallado-exterior.jpg"
+                alt="Detallado exterior de vehículo — carrocería con acabado brillante" loading="lazy">
+            </div>
+            <div class="service-content">
+              <div class="service-icon" aria-hidden="true">✨</div>
+              <h3 class="service-name">Detallado</h3>
+              <p class="service-desc">
+                Limpieza profunda interior y exterior. Atención meticulosa a cada rincón de tu vehículo para un acabado
+                impecable.
+              </p>
+              <a href="https://wa.me/50671686242?text=Hola%2C%20quisiera%20saber%20sobre%20el%20servicio%20de%20Detallado"
+                class="service-link" target="_blank" rel="noopener noreferrer"
+                aria-label="Consultar servicio de Detallado por WhatsApp">Consultar →</a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-media">
+              <img src="img/encerado.jpg" alt="Encerado de vehículo — superficie con brillo protector" loading="lazy"
+                style="object-position: center top;">
+            </div>
+            <div class="service-content">
+              <div class="service-icon" aria-hidden="true">💧</div>
+              <h3 class="service-name">Encerado</h3>
+              <p class="service-desc">
+                Protege la pintura de tu auto con una capa de cera de alta calidad que brinda brillo duradero y
+                protección
+                UV.
+              </p>
+              <a href="https://wa.me/50671686242?text=Hola%2C%20quisiera%20saber%20sobre%20el%20servicio%20de%20Encerado"
+                class="service-link" target="_blank" rel="noopener noreferrer"
+                aria-label="Consultar servicio de Encerado por WhatsApp">Consultar →</a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-media">
+              <img src="img/limpieza-interior.jpg" alt="Limpieza interior de vehículo — asientos y piso impecables"
+                loading="lazy" style="object-position: center bottom;">
+            </div>
+            <div class="service-content">
+              <div class="service-icon" aria-hidden="true">🪑</div>
+              <h3 class="service-name">Limpieza Interior</h3>
+              <p class="service-desc">
+                Aspirado, limpieza de tapicería, tablero y todos los espacios internos. Tu habitáculo como nuevo.
+              </p>
+              <a href="https://wa.me/50671686242?text=Hola%2C%20quisiera%20saber%20sobre%20el%20servicio%20de%20Limpieza%20Interior"
+                class="service-link" target="_blank" rel="noopener noreferrer"
+                aria-label="Consultar servicio de Limpieza Interior por WhatsApp">Consultar →</a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-media">
+              <img src="img/lavado-exterior.jpg" alt="Lavado exterior de vehículo — carrocería y llantas limpias"
+                loading="lazy" style="object-position: center;">
+            </div>
+            <div class="service-content">
+              <div class="service-icon" aria-hidden="true">🚗</div>
+              <h3 class="service-name">Lavado Exterior</h3>
+              <p class="service-desc">
+                Lavado completo de la carrocería, llantas y limpiaparabrisas con productos especializados.
+              </p>
+              <a href="https://wa.me/50671686242?text=Hola%2C%20quisiera%20saber%20sobre%20el%20servicio%20de%20Lavado%20Exterior"
+                class="service-link" target="_blank" rel="noopener noreferrer"
+                aria-label="Consultar servicio de Lavado Exterior por WhatsApp">Consultar →</a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-media">
+              <img src="img/limpieza-motor.jpg" alt="Limpieza del compartimiento del motor del vehículo" loading="lazy">
+            </div>
+            <div class="service-content">
+              <div class="service-icon" aria-hidden="true">⚙️</div>
+              <h3 class="service-name">Limpieza del Motor</h3>
+              <p class="service-desc">
+                Desengrasado y limpieza profunda del compartimiento del motor. Eliminamos suciedad acumulada para un
+                mejor
+                rendimiento y presentación.
+              </p>
+              <a href="https://wa.me/50671686242?text=Hola%2C%20quisiera%20saber%20sobre%20el%20servicio%20de%20Limpieza%20del%20Motor"
+                class="service-link" target="_blank" rel="noopener noreferrer"
+                aria-label="Consultar servicio de Limpieza del Motor por WhatsApp">Consultar →</a>
+            </div>
+          </article>
+
+          <!-- W3C error #18: role="listitem" removido.
+               W3C error #19: aria-label en <div> sin role — corregido con role="group" -->
+          <article class="service-card service-card--carblock" aria-labelledby="carblock-title">
+            <div class="carblock-photo">
+              <img src="img/carblock.jpg"
+                alt="Botellas del producto Carblock Millonario sobre la carrocería del vehículo" loading="lazy">
+            </div>
+            <div class="service-icon service-icon--carblock" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true" focusable="false">
+                <polygon points="14,2 17,10 26,10 19,15.5 21.5,24 14,19 6.5,24 9,15.5 2,10 11,10" fill="#c9a84c"
+                  stroke="#e8c96a" stroke-width="1" />
+              </svg>
+            </div>
+            <div class="carblock-logo-text" aria-hidden="true">CAR<span>BLOCK</span></div>
+            <h3 class="service-name service-name--carblock" id="carblock-title">Aromatizante Carblock</h3>
+            <p class="service-desc">
+              Aromatizante premium de larga duración con tecnología Carblock. Fragancia profesional que neutraliza
+              olores y deja tu habitáculo con un aroma fresco y persistente.
+            </p>
+            <!-- W3C error #19: aria-label en div → role="group" + aria-label válido -->
+            <div class="carblock-badge" role="group" aria-label="Características del producto">
+              <span>✦ Premium</span>
+              <span>✦ Larga duración</span>
+            </div>
+            <a href="https://wa.me/50671686242?text=Hola%2C%20quisiera%20saber%20sobre%20el%20Aromatizante%20Carblock"
+              class="service-link service-link--carblock" target="_blank" rel="noopener noreferrer"
+              aria-label="Consultar Aromatizante Carblock por WhatsApp">Consultar →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================
+         PAQUETES
+         ======================== -->
+    <section id="paquetes" aria-labelledby="packages-heading">
+      <div class="section-inner">
+
+        <header class="section-header">
+          <p class="section-label">Nuestros paquetes</p>
+          <h2 class="section-title" id="packages-heading">
+            Elige tu <span>Lavado</span>
+          </h2>
+          <p class="section-desc">
+            Dos opciones pensadas para adaptarse a tu tiempo y tus necesidades.
+          </p>
+        </header>
+
+        <div class="packages-grid">
+
+          <article class="package-card package-flash" aria-labelledby="flash-title">
+            <div class="package-badge badge-flash">⚡ Rápido</div>
+            <h3 class="package-title flash-color" id="flash-title">Lavado Flash</h3>
+            <p class="package-sub">Limpieza exterior rápida — ideal cuando tienes poco tiempo</p>
+            <ul class="package-features" aria-label="Incluye">
+              <li class="pkg-feat">Lavado exterior completo</li>
+            </ul>
+            <p class="package-note">
+              La opción perfecta para mantener tu auto siempre presentable sin sacrificar tu agenda.
+            </p>
+            <a href="https://wa.me/50671686242?text=Hola%2C%20quisiera%20agendar%20una%20cita%20para%20el%20Lavado%20Flash"
+              class="package-link" target="_blank" rel="noopener noreferrer"
+              aria-label="Agendar Lavado Flash por WhatsApp">Agendar Lavado Flash →</a>
+          </article>
+
+          <article class="package-card package-full" aria-labelledby="full-title">
+            <div class="package-badge badge-full">⭐ Completo</div>
+            <h3 class="package-title full-color" id="full-title">Lavado Full</h3>
+            <p class="package-sub">Todo lo que tu auto necesita</p>
+            <ul class="package-features" aria-label="Incluye">
+              <li class="pkg-feat">Lavado exterior</li>
+              <li class="pkg-feat">Limpieza interior</li>
+              <li class="pkg-feat">Encerado</li>
+              <li class="pkg-feat">Detallado completo</li>
+            </ul>
+            <p class="package-note">El paquete más completo para tu vehículo.</p>
+            <a href="https://wa.me/50671686242?text=Hola%2C%20quisiera%20agendar%20una%20cita%20para%20el%20Lavado%20Full"
+              class="package-link" target="_blank" rel="noopener noreferrer"
+              aria-label="Agendar Lavado Full por WhatsApp">Agendar Lavado Full →</a>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================
+         CONTACTO
+         ======================== -->
+    <section id="contacto" aria-labelledby="contact-heading">
+      <div class="section-inner">
+
+        <header class="section-header">
+          <p class="section-label">Estamos para ti</p>
+          <h2 class="section-title" id="contact-heading">
+            Agenda tu <span>Cita</span>
+          </h2>
+        </header>
+
+        <!-- CSS Grid — 4 tarjetas 2x2 -->
+        <div class="contact-grid">
+
+          <!-- WhatsApp / Teléfono -->
+          <article class="contact-card" aria-labelledby="phone-heading">
+            <div class="contact-icon" aria-hidden="true">📱</div>
+            <h3 id="phone-heading">Llámanos</h3>
+            <p>Agenda tu cita fácilmente por WhatsApp o llamada:</p>
+            <a href="https://wa.me/50671686242" class="phone-link" target="_blank" rel="noopener noreferrer"
+              aria-label="Contactar por WhatsApp al 7168-6242">
+              <svg class="icon-whatsapp" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"
+                aria-hidden="true" focusable="false">
+                <path
+                  d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1-.2.2-.3.2-.6.1-1.9-.9-3.1-1.7-4.4-3.8-.2-.3 0-.5.1-.6l.5-.6c.1-.2.1-.4 0-.5-.1-.2-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9 1-.9 2.3 0 1.4 1 2.7 1.1 2.9.1.2 1.9 3 4.7 4.1 2.3.9 2.8.7 3.3.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.1-1.4-.1-.1-.3-.1-.5-.2z" />
+                <path
+                  d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5.1-1.3c1.4.8 3 1.2 4.9 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.3.9.9-3.2-.2-.3C3.9 14.8 3.5 13.4 3.5 12c0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5-3.8 8.5-8.5 8.5z" />
+              </svg>
+              7168&nbsp;6242
+            </a>
+          </article>
+
+          <!-- Horario -->
+          <article class="contact-card" aria-labelledby="hours-heading">
+            <div class="contact-icon" aria-hidden="true">🕐</div>
+            <h3 id="hours-heading">Horario</h3>
+            <div class="hours-row">
+              <span class="day">Lunes – Viernes</span>
+              <span class="time">8:00 AM – 5:00 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Sábados</span>
+              <span class="time">8:00 AM – 3:00 PM</span>
+            </div>
+          </article>
+
+          <!-- Instagram -->
+          <article class="contact-card" aria-labelledby="ig-heading">
+            <div class="contact-icon" aria-hidden="true">📸</div>
+            <h3 id="ig-heading">Instagram</h3>
+            <p>Síguenos y mira los resultados de nuestro trabajo:</p>
+            <a href="https://www.instagram.com/multi.servicios_vh" class="ig-link" target="_blank"
+              rel="noopener noreferrer" aria-label="Visitar perfil de Instagram de Multiservicios VH">
+              <span class="ig-handle">@multi.servicios_vh</span>
+            </a>
+          </article>
+
+          <!-- Mapa
+               W3C error #20: width="100%" inválido en <iframe> — removido.
+               El ancho se gestiona con CSS: .map-wrapper iframe { width: 100% } -->
+          <article class="contact-card map-card" aria-labelledby="map-heading">
+            <div class="contact-icon" aria-hidden="true">📍</div>
+            <h3 id="map-heading">Nuestra Ubicación</h3>
+            <div class="map-wrapper">
+              <iframe src="https://www.google.com/maps?q=9.931227,-84.081706&z=17&output=embed" height="180"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                title="Ubicación de Auto Lavado Multiservicios VH en Google Maps" tabindex="-1"
+                aria-hidden="true"></iframe>
+            </div>
+            <a href="https://maps.app.goo.gl/gwP656s24cm2AhPr8" target="_blank" rel="noopener noreferrer"
+              class="map-link" aria-label="Ver ubicación en Google Maps">Ver en Google Maps →</a>
+          </article>
+
+        </div>
+
+        <!-- CTA Block -->
+        <div class="cta-block" style="margin-top: 2rem;">
+          <h2>¿Listo para un auto <span style="color:var(--clr-primary);">impecable</span>?</h2>
+          <p>Agenda tu cita ahora y comprueba los resultados que se notan.</p>
+          <div class="cta-buttons">
+            <a href="https://wa.me/50671686242" class="btn-whatsapp" target="_blank" rel="noopener noreferrer"
+              aria-label="Escribir por WhatsApp al 7168-6242">
+              <svg class="icon-whatsapp" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
+                aria-hidden="true" focusable="false">
+                <path
+                  d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1-.2.2-.3.2-.6.1-1.9-.9-3.1-1.7-4.4-3.8-.2-.3 0-.5.1-.6l.5-.6c.1-.2.1-.4 0-.5-.1-.2-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9 1-.9 2.3 0 1.4 1 2.7 1.1 2.9.1.2 1.9 3 4.7 4.1 2.3.9 2.8.7 3.3.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.1-1.4-.1-.1-.3-.1-.5-.2z" />
+                <path
+                  d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5.1-1.3c1.4.8 3 1.2 4.9 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.3.9.9-3.2-.2-.3C3.9 14.8 3.5 13.4 3.5 12c0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5-3.8 8.5-8.5 8.5z" />
+              </svg>
+              WhatsApp — 7168 6242
+            </a>
+            <a href="#servicios" class="btn-secondary" aria-label="Ver todos los servicios disponibles">
+              Ver servicios →
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- W3C warning #21: role="contentinfo" innecesario en <footer> nativo — removido -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        auto<span>LAVADO</span> Multiservicios VH
+      </div>
+      <p class="footer-copy">
+        © 2026 Auto Lavado Multiservicios VH — Todos los derechos reservados
+      </p>
+      <p class="footer-copy">
+        📞 7168&nbsp;6242
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+
+</body>
+
+</html>
