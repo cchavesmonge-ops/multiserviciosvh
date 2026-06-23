@@ -385,7 +385,7 @@ ul {
 .hero-bg-photo {
   position: absolute;
   inset: 0;
-  background: url('../img/local.jpg') center center / cover no-repeat;
+  background: url('../img/local2.jpeg') center center / cover no-repeat;
   filter: saturate(0.25) brightness(0.4);
   pointer-events: none;
 }
